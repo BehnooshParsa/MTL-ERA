@@ -1,4 +1,4 @@
-# MTL-ERA: Multi-Task Learning Approach for Ergonomics Risk Assessment
+# MTL-ERA: Multi-Task Learning for Ergonomics Risk Assessment
 
 
 In this repository, we provide the details of the implementation of the following manuscript: <br> <br>
