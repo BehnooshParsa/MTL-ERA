@@ -1,0 +1,18 @@
+log_dir: './outputs/TUM/logs/'
+checkpoint_dir: './outputs/TUM/checkpoints/'
+pred_dir: './outputs/TUM/plots/prediction/'
+CM_dir: './outputs/TUM/plots/Confusion_Matrix/'
+CM_plots: './outputs/TUM/plots/CM_plots/'
+REBA_plots: './outputs/TUM/plots/REBA_plots/'
+
+TASK: 'MTL-Emb' #'classification' 'regression' 'MTL' 'MTL-Emb'
+STEPS: 500
+BATCH_SIZE: 8
+HISTORY: None
+KERNEL_INIT: "uniform"
+THREADS: 12
+LR: [5e-2, 1e-2, 5e-3, 1e-3, 5e-4, 1e-4, 5e-5, 1e-5]
+NUMBER_OF_CLASSES: 21
+n_nodes: [50, 50, 50, 50] #EDTCN hidden layers size
+PATIENCE: 30 # for early stopping
+loss_reg: MSEL1 #MSESmoothL1 # MSE # SmoothL1 # L1 # MSEL1

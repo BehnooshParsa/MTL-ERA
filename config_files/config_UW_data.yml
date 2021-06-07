@@ -1,0 +1,30 @@
+base_data_dir: 'Data/UW/'
+train_dir: 'EDTCN/TrainValSplits/train.npy'
+val_dir: 'EDTCN/TrainValSplits/val.npy'
+split: 'EDTCN/TrainValSplits/val.npy'
+threed_poseloc: 'Poses/LCRnet/3D Ready/withNeck/'
+label_dir: 'Labels/ClassNumber/'
+labelnames: 'Labels/uniquelabelnames.npy'
+reba_scores_loc: 'RebaScoreFrameWise/'
+
+
+classes: (
+  'walking', 'stand_reach_top', 'box_stand_pick_up_top', 'box_stand_place_mid', 'standing', 'rod_stand_pick_up_top',
+  'rod_stand_place_mid', 'box_stand_pick_up_mid', 'rod_stand_pick_up_mid', 'none_bend_none_none',
+  'rod_bend_pick_up_low',
+  'box_bend_place_low', 'rod_bend_place_low', 'box_stand_place_top', 'rod_stand_place_top', 'box_bend_pick_up_low',
+  'box_walk_hold')
+NUMBER_OF_CLASSES: 17
+#end_frame: [1472, 1517, 1145, 1810, 1446, 1703, 1432, 1865, 1535, 1830, 2372, 2316, 1595, 2130, 1601, 2479, 1866, 1593,
+#             1935, 1404]
+#start_frame: [49, 72, 41, 55, 66, 67, 105, 83, 77, 77, 82, 83, 115, 62, 54, 98, 76, 63, 94, 54]
+#joints: ['0: right ankle', '1: left ankle', '2: right knee', '3: left knee', '4: right hip',
+#          '5: left hip', '6: right wrist', '7: left wrist', '8: right elbow', '9: left elbow',
+#          '10: right shoulder', '11: left shoulder', '12: neck', '13: head', '14: center']
+#
+#pairs: {'0: left upperarm': (9, 11), '1: left forearm': (7, 9),
+#         '2: left shin': (1, 3), '3: left thigh': (3, 5),  # bones on the left
+#         '4: right shin': (0, 2), '5: right thigh': (2, 4),
+#         '6: right upperarm': (8, 10), '7: right forearm': (6, 8),  # bones on the right
+#         '8: hip': (4, 5), '9: shoulder': (10, 11),
+#         '10: neck': (12, 13)}  # bones on the torso

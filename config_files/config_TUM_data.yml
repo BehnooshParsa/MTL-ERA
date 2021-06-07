@@ -1,0 +1,28 @@
+base_data_dir: '/Data/TUM/'
+train_dir: 'EDTCN/TrainValSplits/train.npy'
+val_dir: 'EDTCN/TrainValSplits/val.npy'
+split: 'EDTCN/TrainValSplits/val.npy'
+threed_poseloc: 'Poses/'
+label_dir: 'Labels/ClassNumber/'
+reba_scores_loc: 'RebaScoreFrameWise/'
+
+
+classes: ('close,cabinet', 'close,drawer', 'open,cabinet', 'open,drawer', 'pick-up,cabinet',
+  'pick-up,drawer', 'pick-up,hold-both-hand', 'pick-up,hold-one-hand','place,hold-both-hand',
+  'place,hold-one-hand', 'reach,cabinet', 'reach,drawer','reach,not-hold',
+  'stand,not-hold', 'twist,hold-both-hand', 'twist,hold-one-hand', 'twist,not-hold', 'walk,hold-both-hand',
+  'walk,hold-one-hand', 'walk,not-hold')
+
+NUMBER_OF_CLASSES: 21 # because there was no label 13 ('stand,hold-both-hand') in the labels
+
+
+#joints = ['0: right ankle', '1: left ankle', '2: right knee', '3: left knee', '4: right hip',
+#          '5: left hip', '6: right wrist', '7: left wrist', '8: right elbow', '9: left elbow',
+#          '10: right shoulder', '11: left shoulder', '12: neck', '13: head', '14: center']
+#
+#pairs = {'0: left upperarm': (9, 11), '1: left forearm': (7, 9),
+#         '2: left shin': (1, 3), '3: left thigh': (3, 5),  # bones on the left
+#         '4: right shin': (0, 2), '5: right thigh': (2, 4),
+#         '6: right upperarm': (8, 10), '7: right forearm': (6, 8),  # bones on the right
+#         '8: hip': (4, 5), '9: shoulder': (10, 11),
+#         '10: neck': (12, 13)}  # bones on the torso
